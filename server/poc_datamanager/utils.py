@@ -4,6 +4,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import Chroma
 import os
 
+
 def process_pdf(pdf_path):
     model_name = "BAAI/bge-large-en"   # "BAAI/bge-large-en" is the model name for the large model can also use small but gives error with large pdfs
     model_kwargs = {"device": "cpu"}
